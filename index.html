@@ -303,32 +303,4 @@
         </div>
     </main>
 </body>
-<script>
-    let slider_img = document.querySelector('.slider_img');
-    let btn = document.querySelector('.btn');
-    let two = document.querySelector('.btn-two');
-    let images = ['a.png','b.png','c.png','f.png'];
-    let i = 0;
-        btn.addEventListener('click', function() {
-            if(i <= 0) {
-            i = images.length;
-            i--;
-            return setImg();
-        }
-        });
-        two.addEventListener('click', function() {
-            if(i >= images.length - 1) {
-            i = -1;
-            i++;
-            return setImg();
-        }
-        });
-  
-       
-    
-    function setImg() {
-        return slider_img.setAttribute('src', 'images/' + images[i]);
-    }
-   
-</script>
 </html>
